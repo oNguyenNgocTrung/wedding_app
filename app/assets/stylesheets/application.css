@@ -10,6 +10,9 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
  *= require_self
+ *= require glanz/css/glanz_library
+ *= require glanz/fonts/themify-icons
+ *= require glanz/css/glanz_style
+ *= require glanz/fonts/marsha/stylesheet
  */
