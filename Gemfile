@@ -17,6 +17,11 @@ gem "jbuilder", "~> 2.5"
 gem "figaro"
 gem "config"
 gem "slim"
+gem "capistrano"
+gem "capistrano-rails", require: false
+gem "capistrano-bundler", require: false
+gem "capistrano-passenger", "~> 0.2.0"
+gem "capistrano-rbenv"
 
 group :development, :test do
   gem "capybara", "~> 2.13"
