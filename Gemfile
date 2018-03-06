@@ -22,6 +22,8 @@ gem "capistrano-rails", require: false
 gem "capistrano-bundler", require: false
 gem "capistrano-passenger", "~> 0.2.0"
 gem "capistrano-rbenv"
+gem "wicked_pdf"
+gem "wkhtmltopdf-binary"
 
 group :development, :test do
   gem "capybara", "~> 2.13"
