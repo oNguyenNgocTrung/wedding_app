@@ -11,7 +11,7 @@
           b Save The Date
         .gla_flower2_name_r
           | Bich
-          b August 10, 2017
+          b April 09, 2018
         img alt="" src="#{image_url 'slide_center_middle.jpg'}"
     /! Slider Texts End
   /! container end
@@ -20,3 +20,176 @@
     b
     | Scroll
 /! Slider End
+
+/! Timer
+section.gla_section
+  .container.text-center
+    .row.text-center
+      .col-md-4.gla_round_block
+        .gla_round_im.gla_image_bck data-image="#{image_url 'trung.jpg'}"
+        h3 Trung
+      .col-md-4.gla_round_block
+        p
+          - mrandmrs_url = image_url "glanz/images/animations/mrandmrs.gif"
+          = image_tag mrandmrs_url, alt: "", height: 150
+        h3
+          | Chúng tôi chuẩn bị cưới
+          br>/
+          | vào ngày 9 tháng 4 năm 2018
+        | Tĩnh Gia, Thanh Hóa
+      .col-md-4.gla_round_block
+        .gla_round_im.gla_image_bck data-image="#{image_url 'bich.jpg'}"
+        h3 Bích
+    .gla_countdown data-day="09" data-month="04" data-year="2018"
+/! Timer End
+
+/! About us
+section.gla_section.gla_image_bck data-color="#ecf2f0"
+  .container
+    .row.gla_auto_height
+      .col-md-6.gla_image_bck data-color="#fff"
+        .gla_simple_block
+          h2 Bích
+          p Nàng là cô gái miền núi luôn ngây thơ trước mọi hoàn cảnh và chỉ thích ăn thịt.
+          /! Social Buttons
+          .gla_footer_social
+            a href="https://www.facebook.com/mam.yeu.tom"
+              i.ti.ti-facebook.gla_icon_box
+            a href="#"
+              i.ti.ti-instagram.gla_icon_box
+            a href="#"
+              i.ti.ti-google.gla_icon_box
+      .col-md-6.gla_image_bck data-image="#{image_url 'QPT_1395.jpg'}"
+      .col-md-6.col-md-push-6.gla_image_bck data-color="#fff"
+        .gla_simple_block
+          h2 Trung
+          p Chàng trai miền biển, thích ăn kẹo và táo.
+          /! Social Buttons
+          .gla_footer_social
+            a href="https://www.facebook.com/nnt142"
+              i.ti.ti-facebook.gla_icon_box
+            a href="#"
+              i.ti.ti-instagram.gla_icon_box
+            a href="#"
+              i.ti.ti-google.gla_icon_box
+      .col-md-6.col-md-pull-6.gla_image_bck data-image="#{image_url 'QPT_1591.jpg'}"
+  /! container end
+/! About us End
+
+/! When&Where
+section#when-where.gla_section
+  .container.text-center
+    h2 style="margin-bottom: 20px;" Thời gian và địa điểm
+    .row.text-center
+      .col-md-3.gla_round_block
+        h3 Cỗ cưới nhà gái
+        p 07/04/2018 10:00AM
+        p Phù Yên, Sơn La
+        p 0961236977
+        a.btn href="https://goo.gl/UkzDRX" target="_blank" Bản đồ
+      .col-md-3.gla_round_block
+        h3 Cỗ cưới nhà trai
+        p 08/04/2018 10:00AM
+        p TK1, Tĩnh Gia, Thanh Hóa
+        p 0976418537
+        a.btn href="https://goo.gl/dwAcoR" target="_blank" Bản đồ
+      .col-md-3.gla_round_block
+        h3 Lễ Cưới
+        p 09/04/2018 08:00AM
+        p TK1, Tĩnh Gia, Thanh Hóa
+        p 0976418537
+        a.btn href="https://goo.gl/dwAcoR" target="_blank" Bản đồ
+      .col-md-3.gla_round_block
+        h3 Lễ Báo Hỷ
+        p 14/04/2018 17:00
+        p Trống Đồng Thành Công, HN
+        p 0961236977
+        a.btn href="https://goo.gl/63x4iX" target="_blank" Bản đồ
+/! When&Where End
+/! RSVP
+section.gla_section.gla_image_bck.gla_fixed.gla_wht_txt data-image="#{image_url 'QPT_123.jpg'}" data-stellar-background-ratio="0.2"
+  .gla_over data-color="#1e1d2d" data-opacity="0.4"
+  .container.text-center
+    h2 style="margin-bottom: 10px;" Bạn sẽ đến đám cưới?
+    h4 style="margin-bottom: 60px;" Điền thông tin để chúng tôi có thể chuẩn bị tốt nhất nhé!!!
+    .row
+      .col-md-8.col-md-push-2
+        form action="" method="POST"
+          .row
+            .col-md-6
+              label Têm của bạn
+              input.form-control.form-opacity name="name" type="text"
+            .col-md-6
+              label Email hoặc số điện thoại
+              input.form-control.form-opacity name="email" type="text"
+          .row
+            .col-md-12
+              label Bạn tham gia được những buổi nào?
+          .row style="margin-bottom: 20px;"
+            .col-md-6
+              input name="attend" type="checkbox" value="0"
+              span Cỗ cưới nhà gái - Thứ 7 07/04/2018
+              br/
+              input name="attend" type="checkbox" value="1"
+              span Cỗ cưới nhà gái - Chủ nhật 08/04/2018
+            .col-md-6
+              input name="attend" type="checkbox" value="2"
+              span Lễ cưới - Thứ 2 09/04/2018
+              br/
+              input name="attend" type="checkbox" value="3"
+              span Lễ báo hỷ - Thứ 7 14/04/2018
+          .row
+            .col-md-12
+              label Bạn có muốn nhắn nhủ điều gì không?
+              textarea.form-control.form-opacity name="message"
+          .row
+            .col-md-12
+              input.btn.submit type="button" value="Tôi sẽ đến"
+/! RSVP End
+
+/! Album
+section#gallery.gla_section.gla_image_bck
+  .container.text-center
+    p
+      - flower7_url = image_url "glanz/images/animations/flower7.gif"
+      = image_tag flower7_url, alt: "", height: 110, class: "gla_animated_flower"
+    h2 Ảnh kỉ niệm
+    p Chúng tôi đều thích chụp ảnh nhưng chỉ thích đăng ảnh đẹp ^^
+    /! filters
+    .button-group.filter-button-group
+      a data-filter="*"  Tất cả
+      a data-filter=".hanoi"  Hà Nội
+      a data-filter=".moc_chau"  Mộc Châu
+      a data-filter=".ta_xua"  Tà Xùa
+      a data-filter=".an_hoi"  Ăn Hỏi
+      a data-filter=".cuoi"  Lễ cưới
+    /! filters end
+    /! grid
+    .gla_portfolio_no_padding.grid
+      - (1..8).each do |i|
+        .col-sm-3.gla_anim_box.grid-item.hanoi
+          .gla_shop_item
+            - original_image_url = image_url "gallery/BT_#{i}.jpg"
+            a.lightbox href="#{original_image_url}"
+              img alt="" src="#{original_image_url}"
+      - (1..10).each do |i|
+        .col-sm-3.gla_anim_box.grid-item.moc_chau
+          .gla_shop_item
+            - original_image_url = image_url "gallery/MC_#{i}.jpg"
+            a.lightbox href="#{original_image_url}"
+              img alt="" src="#{original_image_url}"
+      - (1..10).each do |i|
+        .col-sm-3.gla_anim_box.grid-item.ta_xua
+          .gla_shop_item
+            - original_image_url = image_url "gallery/TX_#{i}.jpg"
+            a.lightbox href="#{original_image_url}"
+              img alt="" src="#{original_image_url}"
+/! Album End
+/! Thanks you
+section.gla_section.gla_image_bck.gla_fixed.gla_wht_txt data-image="#{image_url 'QPT_2433.jpg'}" data-stellar-background-ratio="0.8"
+  .gla_over data-color="#1e1d2d" data-opacity="0.4"
+  .container.text-center
+    p
+      - thnyou_wh_url = image_url "glanz/images/animations/thnyou_wh.gif"
+      = image_tag thnyou_wh_url, alt: "", height: 200
+/! Thanks you End
