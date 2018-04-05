@@ -114,14 +114,14 @@ section.gla_section.gla_image_bck.gla_fixed.gla_wht_txt data-image="#{image_url 
     h4 style="margin-bottom: 60px;" Điền thông tin để chúng tôi có thể chuẩn bị tốt nhất nhé!!!
     .row
       .col-md-8.col-md-push-2
-        form action="" method="POST"
+        = form_for @customer, remote: true do |f|
           .row
             .col-md-6
-              label Têm của bạn
-              input.form-control.form-opacity name="name" type="text"
+              label Tên của bạn
+              = f.text_field :name, class: "form-control form-opacity"
             .col-md-6
               label Email hoặc số điện thoại
-              input.form-control.form-opacity name="email" type="text"
+              = f.text_field :contact, class: "form-control form-opacity"
           .row
             .col-md-12
               label Bạn tham gia được những buổi nào?
@@ -141,10 +141,10 @@ section.gla_section.gla_image_bck.gla_fixed.gla_wht_txt data-image="#{image_url 
           .row
             .col-md-12
               label Bạn có muốn nhắn nhủ điều gì không?
-              textarea.form-control.form-opacity name="message"
+              = f.text_area :note, class: "form-control form-opacity"
           .row
             .col-md-12
-              input.btn.submit type="button" value="Tôi sẽ đến"
+              = f.submit "Tôi sẽ đến", class: "btn submit"
 /! RSVP End
 
 /! Album

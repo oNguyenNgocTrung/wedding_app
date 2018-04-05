@@ -1,0 +1,17 @@
+<% if @customer.valid? %>
+  swal({
+    title: "Cám ơn!!!",
+    text: "Hẹn gặp lại vào ngày cưới mình nhé :P",
+    icon: "success",
+    button: "OK",
+  }).then((value) => {
+    $('input[type="text"], textarea').val('');
+  });
+<% else %>
+  swal({
+    title: "Xin lỗi!!!",
+    text: "Hình như có lỗi củ chuối gì đó, bạn thử lại nhé (bow)",
+    icon: "warning",
+    button: "OK",
+  });
+<% end %>

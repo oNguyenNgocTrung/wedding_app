@@ -1,6 +1,6 @@
 ﻿(function($) {
 	"use strict"; // Start of use strict
-	
+
 	/* Logo Lettering */
 	var logo_rotate = $("header .gla_logo_animation").attr('data-rotate');
 	if (logo_rotate!='') {
@@ -10,13 +10,13 @@
 	var main_menu_icon = $(".gla_main_menu_icon b");
 	main_menu_icon.lettering();
 	main_menu_icon.each(function(){
-	 	var i = 2;	
+	 	var i = 2;
 	 	$(this).find('span').each(function(){
 			$(this).css('transition-delay','0.'+i+'s');
 			i++;
 		})
 	 });
-	
+
 	$("header .gla_logo_animation").lettering();
 	$("header .gla_logo_animation span").each(function(){
 	 	var min = 0;
@@ -43,7 +43,7 @@
   $('.date_picker').datepicker();
 
     /*Gallery Lightbox*/
-	$('.lightbox').magnificPopup({ 
+	$('.lightbox').magnificPopup({
 	  type: 'image',
 	  gallery:{
 	    enabled:true
@@ -64,9 +64,9 @@
 		      id: 'v=', // String that splits URL in a two parts, second part should be %id%
 		      // Or null - full URL will be returned
 		      // Or a function that should return %id%, for example:
-		      // id: function(url) { return 'parsed id'; } 
+		      // id: function(url) { return 'parsed id'; }
 
-		      src: 'http://www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe. 
+		      src: 'http://www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe.
 		    },
 		    vimeo: {
 		      index: 'vimeo.com/',
@@ -83,27 +83,27 @@
 		  },
 
 		  srcAction: 'iframe_src', // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
-		}  
-	  
+		}
+
 	});
-	
+
 	/*OWL Intro Slider*/
 
 	if ($('.gla_slider_carousel .gla_slider').length>1) {
-		
+
 		if($('#video_background').length==1) {
 			$(".gla_slider_carousel").owlCarousel({
-		 		navigation : true, 
+		 		navigation : true,
 		 		pagination: false,
-		 		responsive: true, 
-		 		responsiveRefreshRate : 200, 
-		 		responsiveBaseElement:window, 
-		 		slideSpeed : 200, 
+		 		responsive: true,
+		 		responsiveRefreshRate : 200,
+		 		responsiveBaseElement:window,
+		 		slideSpeed : 200,
 		 		addClassActive:true,
-				paginationSpeed : 200, 
+				paginationSpeed : 200,
 				rewindSpeed : 200,
 				items:1,
-				autoPlay : false, 
+				autoPlay : false,
 				touchDrag:true,
 				singleItem:true,
 				navigationText:['<i class="ti ti-angle-left"></i>','<i class="ti ti-angle-right"></i>'],
@@ -114,17 +114,17 @@
 			});
 		}else {
 			$(".gla_slider_carousel").owlCarousel({
-		 		navigation : true, 
+		 		navigation : true,
 		 		pagination: false,
-		 		responsive: true, 
-		 		responsiveRefreshRate : 200, 
-		 		responsiveBaseElement:window, 
-		 		slideSpeed : 200, 
+		 		responsive: true,
+		 		responsiveRefreshRate : 200,
+		 		responsiveBaseElement:window,
+		 		slideSpeed : 200,
 		 		addClassActive:true,
-				paginationSpeed : 200, 
+				paginationSpeed : 200,
 				rewindSpeed : 200,
 				items:1,
-				autoPlay : false, 
+				autoPlay : false,
 				touchDrag:true,
 				singleItem:true,
 				navigationText:['<i class="ti ti-angle-left"></i>','<i class="ti ti-angle-right"></i>'],
@@ -137,58 +137,58 @@
 
   /*OWL Team*/
 	$(".gla_team").owlCarousel({
- 		navigation : true, 
+ 		navigation : true,
  		pagination:false,
- 		responsive: true, 
- 		responsiveRefreshRate : 200, 
- 		responsiveBaseElement:window, 
- 		slideSpeed : 200, 
+ 		responsive: true,
+ 		responsiveRefreshRate : 200,
+ 		responsiveBaseElement:window,
+ 		slideSpeed : 200,
  		addClassActive:true,
-		paginationSpeed : 200, 
+		paginationSpeed : 200,
 		rewindSpeed : 200,
 		items:3,
 		itemsTablet:[1000,2],
 		itemsMobile : [569,1],
 		itemsDesktop:3,
-		autoPlay : false, 
-		touchDrag:true, 
+		autoPlay : false,
+		touchDrag:true,
 		navigationText:['<i class="ti ti-angle-left"></i>','<i class="ti ti-angle-right"></i>']
 	});
 
 	$(".gla_team_menu").owlCarousel({
- 		navigation : true, 
+ 		navigation : true,
  		pagination:false,
- 		responsive: true, 
- 		responsiveRefreshRate : 200, 
- 		responsiveBaseElement:window, 
- 		slideSpeed : 200, 
+ 		responsive: true,
+ 		responsiveRefreshRate : 200,
+ 		responsiveBaseElement:window,
+ 		slideSpeed : 200,
  		addClassActive:true,
-		paginationSpeed : 200, 
+		paginationSpeed : 200,
 		rewindSpeed : 200,
 		items:2,
 		itemsTablet:[1000,1],
 		itemsMobile : [569,1],
 		itemsDesktop:2,
-		autoPlay : false, 
-		touchDrag:true, 
+		autoPlay : false,
+		touchDrag:true,
 		navigationText:['<i class="ti ti-angle-left"></i>','<i class="ti ti-angle-right"></i>']
 	});
 
 	/* OWL Team Single*/
 	$(".gla_team_slider_single").owlCarousel({
- 		navigation : true, 
- 		responsive: true, 
- 		responsiveRefreshRate : 200, 
- 		responsiveBaseElement:window, 
- 		slideSpeed : 200, 
+ 		navigation : true,
+ 		responsive: true,
+ 		responsiveRefreshRate : 200,
+ 		responsiveBaseElement:window,
+ 		slideSpeed : 200,
  		addClassActive:true,
-		paginationSpeed : 200, 
+		paginationSpeed : 200,
 		rewindSpeed : 200,
 		items:1,
-		autoPlay : true, 
+		autoPlay : true,
 		singleItem:true,
 		autoHeight : true,
-		touchDrag:true, 
+		touchDrag:true,
 		navigationText:['<i class="ti ti-angle-left"></i>','<i class="ti ti-angle-right"></i>']
 	});
 
@@ -196,59 +196,59 @@
 	$(".gla_guests_slider_single").owlCarousel({
  		navigation : true,
  		pagination:false,
- 		responsive: true, 
- 		responsiveRefreshRate : 200, 
- 		responsiveBaseElement:window, 
- 		slideSpeed : 200, 
+ 		responsive: true,
+ 		responsiveRefreshRate : 200,
+ 		responsiveBaseElement:window,
+ 		slideSpeed : 200,
  		addClassActive:true,
-		paginationSpeed : 200, 
+		paginationSpeed : 200,
 		rewindSpeed : 200,
 		items:1,
-		autoPlay : true, 
+		autoPlay : true,
 		singleItem:true,
 		autoHeight : true,
-		touchDrag:true, 
+		touchDrag:true,
 		navigationText:['<i class="ti ti-angle-left"></i>','<i class="ti ti-angle-right"></i>']
 	});
 
 	/* OWL PARTNERS*/
 	$(".gla_partners").owlCarousel({
- 		navigation : true, 
- 		responsive: true, 
- 		responsiveRefreshRate : 200, 
- 		responsiveBaseElement:window, 
- 		slideSpeed : 200, 
+ 		navigation : true,
+ 		responsive: true,
+ 		responsiveRefreshRate : 200,
+ 		responsiveBaseElement:window,
+ 		slideSpeed : 200,
  		addClassActive:true,
-		paginationSpeed : 200, 
+		paginationSpeed : 200,
 		rewindSpeed : 200,
 		items:5,
-		autoPlay : true, 
+		autoPlay : true,
 		autoHeight : true,
-		touchDrag:true, 
+		touchDrag:true,
 		navigationText:['<i class="ti ti-angle-left"></i>','<i class="ti ti-angle-right"></i>']
 	});
 
 	/*OWL Carousel in Shop Item*/
 	if ($('.gla_shop_item_slider img').length>1) {
 		$(".gla_shop_item_slider").owlCarousel({
-	 		navigation : false, 
-	 		responsive: true, 
-	 		responsiveRefreshRate : 200, 
-	 		responsiveBaseElement:window, 
-	 		slideSpeed : 200, 
+	 		navigation : false,
+	 		responsive: true,
+	 		responsiveRefreshRate : 200,
+	 		responsiveBaseElement:window,
+	 		slideSpeed : 200,
 	 		addClassActive:true,
-			paginationSpeed : 200, 
-			rewindSpeed : 200, 
-			singleItem:true, 
-			autoPlay : false, 	
-			touchDrag:true, 
+			paginationSpeed : 200,
+			rewindSpeed : 200,
+			singleItem:true,
+			autoPlay : false,
+			touchDrag:true,
 			navigationText:['<i class="ti ti-angle-left"></i>','<i class="ti ti-angle-right"></i>']
 		});
 	}
 
-	
+
 	/*Instafeed*/
-	
+
 	if ($('#instagram-carousel').length>0) {
 		var feed = new Instafeed({
 	      get: 'user',
@@ -291,25 +291,25 @@
 							var position = $(this).attr('data-position');
 							var height = $(this).attr('data-height');
 							if (image){
-								$(this).css('background-image', 'url('+image+')');	
+								$(this).css('background-image', 'url('+image+')');
 							}
 							if (gradient){
-								$(this).css('background-image', gradient);	
+								$(this).css('background-image', gradient);
 							}
 							if (color){
-								$(this).css('background-color', color);	
+								$(this).css('background-color', color);
 							}
 							if (blend){
-								$(this).css('background-blend-mode', blend);	
+								$(this).css('background-blend-mode', blend);
 							}
 							if (position){
-								$(this).css('background-position', position);	
+								$(this).css('background-position', position);
 							}
 							if (opacity){
-								$(this).css('opacity', opacity);	
+								$(this).css('opacity', opacity);
 							}
 							if (height){
-								$(this).css('height', height);	
+								$(this).css('height', height);
 							}
 
 						});
@@ -318,7 +318,7 @@
 	  });
 		feed.run();
 	}
-	
+
 	/* Mobile Menu */
 	$('.gla_main_menu').on("click", function(e){
 		$(this).next('.gla_main_menu_content').toggleClass('active');
@@ -336,25 +336,25 @@
 		var position = $(this).attr('data-position');
 		var height = $(this).attr('data-height');
 		if (image){
-			$(this).css('background-image', 'url('+image+')');	
+			$(this).css('background-image', 'url('+image+')');
 		}
 		if (gradient){
-			$(this).css('background-image', gradient);	
+			$(this).css('background-image', gradient);
 		}
 		if (color){
-			$(this).css('background-color', color);	
+			$(this).css('background-color', color);
 		}
 		if (blend){
-			$(this).css('background-blend-mode', blend);	
+			$(this).css('background-blend-mode', blend);
 		}
 		if (position){
-			$(this).css('background-position', position);	
+			$(this).css('background-position', position);
 		}
 		if (opacity){
-			$(this).css('opacity', opacity);	
+			$(this).css('opacity', opacity);
 		}
 		if (height){
-			$(this).css('height', height);	
+			$(this).css('height', height);
 		}
 
 	});
@@ -369,61 +369,61 @@
 		var blend = $(this).attr('data-blend');
 		var gradient = $(this).attr('data-gradient');
 		if (gradient){
-			$(this).css('background-image', gradient);	
+			$(this).css('background-image', gradient);
 		}
 		if (color){
-			$(this).css('background-color', color);	
+			$(this).css('background-color', color);
 		}
 		if (image){
-			$(this).css('background-image', 'url('+image+')');	
+			$(this).css('background-image', 'url('+image+')');
 		}
 		if (opacity){
-			$(this).css('opacity', opacity);	
+			$(this).css('opacity', opacity);
 		}
 		if (blend){
-			$(this).css('mix-blend-mode', blend);	
+			$(this).css('mix-blend-mode', blend);
 		}
 	});
 	$('.gla_slide_title, h2').each(function(){
 		var color = $(this).attr('data-color');
 		if (color){
-			$(this).find('span').css('color', color);	
+			$(this).find('span').css('color', color);
 		}
 	});
 	$('.gla_icon_box').each(function(){
 		var color = $(this).attr('data-color');
 		if (color){
-			$(this).find('i').css('color', color);	
+			$(this).find('i').css('color', color);
 		}
 	});
 	$('.skill-bar-content').each(function(){
 		var color = $(this).attr('data-color');
 		if (color){
-			$(this).css('background-image', color);	
+			$(this).css('background-image', color);
 		}
 	});
 	$('img.gla_img_shadow').each(function(){
 		var color = $(this).attr('data-shadow');
 		if (color){
-			$(this).css('filter', color);	
+			$(this).css('filter', color);
 		}
 	});
 	$('.gla_page').each(function(){
 		var border = $(this).attr('data-border');
 		if (border){
-			$('.gla_border_top, .gla_border_bottom, .gla_border_left, .gla_border_right, .gla_sml_abs_title').css('background', border);	
+			$('.gla_border_top, .gla_border_bottom, .gla_border_left, .gla_border_right, .gla_sml_abs_title').css('background', border);
 			$('.gla_bordered_block').css('border-left-color', border);
 			$('.gla_border').css('border-bottom-color', border).css('border-top-color', border);
-			$('.gla_team_simple .gla_bordered_block').css('border-top-color', border);	
+			$('.gla_team_simple .gla_bordered_block').css('border-top-color', border);
 		}
 	});
 	$('.gla_default_menu').each(function(){
 		var color = $(this).attr('data-color');
 		if (color){
-			$(this).find('ul').css('background-color', color);	
+			$(this).find('ul').css('background-color', color);
 		}
 	});
-	
+
 
 	/* Map */
 	$('.gla_map_over').on("click", function(e){
@@ -436,7 +436,7 @@
 		$(this).parents('.gla_light_nav').toggleClass('active');
 	});
 
-	
+
 
 	$('.gla_countdown').each(function(){
 		var year = $(this).attr('data-year');
@@ -464,13 +464,16 @@
 		$('html, body').stop().animate({
 			scrollTop: $(anchor.attr('href')).offset().top
 		}, 300);
+		$('.gla_main_menu_mobile').removeClass('active');
+		$('.gla_main_menu_content').removeClass('active');
+		$('.gla_main_menu_content_menu').removeClass('active');
 		e.preventDefault();
 	});
 
 	/*Animation Block Delay*/
-	
+
 	$('div[data-animation=animation_blocks]').each(function(){
-	var i = 0;	
+	var i = 0;
 		$(this).find('.gla_icon_box, .skill-bar-content, .gla_anim_box').each(function(){
 			$(this).css('transition-delay','0.'+i+'s');
 			i++;
@@ -495,7 +498,7 @@
 	});
 
 	/* Shortcode Nav */
-	var top_offset = $('header').height() - 1; 
+	var top_offset = $('header').height() - 1;
 
 	$('#nav-sidebar').onePageNav({
 		currentClass: 'current',
@@ -506,8 +509,8 @@
 		filter: '',
 		easing: 'swing',
 	});
-	
-	
+
+
 
 	/* Bootstrap */
 	$('[data-toggle="tooltip"]').tooltip();
@@ -518,7 +521,7 @@
 		if ($(window).scrollTop() > 100) {
 			$(".gla_logo").addClass('active');
 			$('body').addClass('gla_first_step');
-			
+
 		}
 		else {
 			$('body').removeClass('gla_first_step');
@@ -554,8 +557,8 @@
 
 	/* Music */
 	$('.gla_music_icon').on('click',function(){
-		$('.gla_music_icon_cont').fadeToggle();	
-	}); 
+		$('.gla_music_icon_cont').fadeToggle();
+	});
 
  	/* Mobile Menu */
 
@@ -570,21 +573,21 @@
 		$(this).next('.gla_header_search_cont').fadeToggle();
 	});
 
-	
-	
+
+
 
 
 	$(window).load(function(){
 
 			// Page loader
-	        
+
 	    $("body").imagesLoaded(function(){
 	        $(".gla_page_loader div").fadeOut();
 	    	$(".gla_page_loader").delay(200).fadeOut("slow");
 	    });
 
 
-		
+
 
 	 	/*Masonry*/
 		var $grid = $('.grid').isotope({
@@ -595,8 +598,8 @@
 		  isAnimated: true,
 		  masonry: {
 		    columnWidth: '.grid-item',
-		    
-		  }	  
+
+		  }
 		});
 		$grid.imagesLoaded().progress( function() {
 		  $grid.isotope('layout');
@@ -609,7 +612,7 @@
 				forceHeight: false,
 			});
 		}
-		
+
 
 
 
@@ -626,7 +629,7 @@
 		  $grid.isotope('layout');
 		});
 
-		
+
 
 		if( !device.tablet() && !device.mobile() ) {
 				$(window).stellar({
@@ -653,7 +656,7 @@
 				}
 			);
 		columns.height(tallestcolumn);
-		}	
+		}
 
 		/* Block Autheight */
 		if( !device.tablet() && !device.mobile() ) {
@@ -684,12 +687,12 @@
 				});
 			}
 		});
-		
-		
+
+
 	});
 
-	
-	
+
+
 })(jQuery);
 
 
