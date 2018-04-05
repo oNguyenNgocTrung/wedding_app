@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require glanz/js/glanz_library.js
+//= require sweetalert.min
 //= require glanz/js/glanz_script.js
