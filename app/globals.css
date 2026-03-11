@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Open Sans", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-heading: "Dosis", sans-serif;
+  --color-primary: #c9a96e;
+  --color-primary-dark: #b8944f;
+  --color-dark: #1e1d2d;
+  --color-overlay: rgba(30, 29, 45, 0.6);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Parallax background sections */
+.parallax-bg {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .parallax-bg {
+    background-attachment: scroll;
+  }
+}
+
+/* Gallery filter button active state */
+.filter-btn {
+  @apply px-4 py-2 text-sm font-medium transition-colors duration-200 cursor-pointer;
+  color: #666;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  color: var(--color-primary);
+}
+
+/* Lightbox overlay */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.lightbox-overlay img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+/* Countdown timer */
+.countdown-value {
+  @apply text-4xl md:text-5xl font-bold;
+  font-family: var(--font-heading);
+}
+
+.countdown-label {
+  @apply text-xs uppercase tracking-widest mt-1;
+  font-family: var(--font-heading);
+}
+
+/* Form styles */
+.form-input {
+  @apply w-full px-4 py-3 bg-white/10 border border-white/30 text-white placeholder-white/50 rounded-sm
+    focus:outline-none focus:border-white/60 transition-colors;
+}
+
+.form-textarea {
+  @apply w-full px-4 py-3 bg-white/10 border border-white/30 text-white placeholder-white/50 rounded-sm
+    focus:outline-none focus:border-white/60 transition-colors resize-none;
+}
+
+/* Toast notification */
+.toast {
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Round image container */
+.round-image {
+  @apply w-40 h-40 md:w-48 md:h-48 rounded-full mx-auto overflow-hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Section styling */
+.section-padding {
+  @apply py-16 md:py-24 px-4;
+}
+
+/* Scroll to top button */
+.scroll-top {
+  @apply fixed bottom-6 right-6 z-50 w-10 h-10 bg-primary text-white rounded-full flex items-center
+    justify-center shadow-lg transition-all duration-300 cursor-pointer hover:bg-primary-dark;
+}
+
+/* Music toggle */
+.music-toggle {
+  @apply fixed top-4 right-4 z-50 w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center
+    justify-center cursor-pointer transition-all hover:bg-white/30;
+}
